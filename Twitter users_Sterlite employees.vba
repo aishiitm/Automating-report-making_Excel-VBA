@@ -1,5 +1,5 @@
 
--------------------------------Identifying Active twitter Members for the day -------------------------------------------------------------------------------------------
+'-------------------------------Identifying Active twitter Members for the day -------------------------------------------------------------------------------------------
 Sub Active_List()
 
 Dim i As Long, n As Long, ID As Long
@@ -24,7 +24,7 @@ Sheets("ACTIVE MEMBERS").Columns("A:E").EntireColumn.Select
 Sheets("ACTIVE MEMBERS").Range("$A$1:$E$104876").RemoveDuplicates Columns:=2, Header:=xlYes
 
 End Sub()
---------------------------------------Inactive Members--------------------------------------------------------------------------------------------------
+'--------------------------------------Inactive Members--------------------------------------------------------------------------------------------------
 Sub Inactive()
 
 Dim i As Integer, n As Integer, ID As Integer
@@ -47,7 +47,7 @@ DoThis:
     
 Resume Next
 Application.ScreenUpdating = True
-----------------------------------------------------Macro to remove duplicates-----------------------------------------------------------
+'----------------------------------------------------Macro to remove duplicates-----------------------------------------------------------
 Sub REMOVING_DUPLICATES()
 
 REMOVING_DUPLICATES Macro
@@ -59,7 +59,7 @@ REMOVING_DUPLICATES Macro
         xlYes
 End Sub
 
--------------------------Inactive HoDs--------------------------------------------------------------------------------------------------
+'-------------------------Inactive HoDs--------------------------------------------------------------------------------------------------
 Sub Inactive_HoDs()
 Dim i As Integer, n As Integer, ID As Double, Status As String
 Sheets("INACTIVE_HoDs").Range("A2:E104876").Clear
